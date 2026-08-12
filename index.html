@@ -26,7 +26,7 @@
 <body>
 
 <h1>Puzzle Blast: Block Master — Gizlilik Politikası</h1>
-<p class="updated">Son güncelleme: 30 Temmuz 2026</p>
+<p class="updated">Son güncelleme: 12 Ağustos 2026</p>
 
 <p>Puzzle Blast: Block Master ("Uygulama", paket <code>com.omerfarukgurun.puzzleblast</code>),
 OmerFarukGurun ("biz") tarafından geliştirilmiştir. Bu gizlilik politikası, Uygulamayı
@@ -36,7 +36,8 @@ politikayı kabul etmiş olursunuz.</p>
 <h2>1. Bizim doğrudan topladığımız veriler</h2>
 <p>Kendi sunucularımızda hiçbir kişisel veri toplamıyoruz. Oyun ilerlemeniz (skor, coin, ayarlar,
 seçili tema, açık/koyu mod tercihi vb.) yalnızca <strong>cihazınızda yerel olarak</strong> saklanır.
-Uygulamayı kaldırdığınızda bu veriler silinir.</p>
+Uygulamayı kaldırdığınızda bu veriler silinir. Tek istisna, liderlik tablosunda göstermek üzere
+kendi belirlediğiniz görünen addır (bkz. aşağıdaki "Firebase Firestore" bölümü).</p>
 
 <h2>2. Üçüncü taraf hizmetlerin işlediği veriler</h2>
 <p>Uygulama, aşağıdaki Google hizmetlerini kullanır; bu hizmetler aşağıda belirtilen verileri
@@ -68,6 +69,16 @@ vermek için satın alınan ürünün onayını alırız.</p>
 küresel liderlik tablosunu göstermek için Google Play Oyun Hizmetleri ile paylaşılır. Giriş yapmak
 isteğe bağlıdır; oyun giriş yapmadan da tamamen oynanabilir.</p>
 
+<h3>Firebase Firestore — Liderlik görünen adı (isteğe bağlı)</h3>
+<p>Liderlik tablosunda görünmesi için kendinize bir <strong>görünen ad</strong> belirlerseniz, bu ad
+Firebase (Firestore) veritabanımızda saklanır ve liderlik tablosunda diğer oyunculara herkese açık
+olarak gösterilir. Adı bu özellikle ilişkilendirmek için Firebase Anonymous Authentication ile anonim
+bir kimlik (rastgele üretilen, kişisel bilgi içermeyen bir kullanıcı kimliği) oluşturulur; Play Games
+oyuncu kimliğiniz de bu kayıtla ilişkilendirilir. Görünen ad belirlemek tamamen isteğe bağlıdır;
+belirlemezseniz sunucuda hiçbir bilgi saklanmaz. Adınızı istediğiniz zaman uygulama içinden
+değiştirebilir ya da tamamen silinmesini istemek için bizimle e-posta yoluyla iletişime geçebilirsiniz.
+Lütfen görünen ad olarak gerçek adınız gibi kişisel bilgiler içeren bir metin kullanmayın.</p>
+
 <h2>3. Bildirimler</h2>
 <p>Uygulama, <strong>yerel bildirimler</strong> (oyuna dönme hatırlatmaları) planlayabilir. Android
 13 ve üzerinde bu, izin vermenizi gerektirir; izni verebilir veya reddedebilirsiniz. Bu
@@ -95,7 +106,7 @@ E-posta: <a href="mailto:omergurun541@gmail.com">omergurun541@gmail.com</a></p>
 <!-- ==================== ENGLISH ==================== -->
 <div class="lang">
 <h1>Puzzle Blast: Block Master — Privacy Policy</h1>
-<p class="updated">Last updated: 30 July 2026</p>
+<p class="updated">Last updated: 12 August 2026</p>
 
 <p>Puzzle Blast: Block Master (the "App", package <code>com.omerfarukgurun.puzzleblast</code>) is
 developed by OmerFarukGurun ("we"). This privacy policy explains what information is processed when
@@ -104,7 +115,8 @@ you use the App. By downloading and using the App you agree to this policy.</p>
 <h2>1. Information we collect directly</h2>
 <p>We do not collect any personal data on our own servers. Your game progress (score, coins,
 settings, selected theme, light/dark preference, etc.) is stored <strong>locally on your device
-only</strong>. Uninstalling the App deletes this data.</p>
+only</strong>. Uninstalling the App deletes this data. The only exception is the display name you
+optionally choose to show on the leaderboard (see the "Firebase Firestore" section below).</p>
 
 <h2>2. Data processed by third-party services</h2>
 <p>The App uses the following Google services, which may process data as described below:</p>
@@ -134,6 +146,15 @@ product to grant in-game items.</p>
 <p>If you choose to sign in to Google Play Games, your Play Games player profile and game scores are
 shared with Google Play Games Services to display global leaderboards. Signing in is optional; the
 game is fully playable without it.</p>
+
+<h3>Firebase Firestore — Leaderboard display name (optional)</h3>
+<p>If you set a <strong>display name</strong> to appear on the leaderboard, that name is stored in our
+Firebase (Firestore) database and shown publicly to other players on the leaderboard. To associate the
+name with this feature, an anonymous identifier (a randomly generated user ID that contains no personal
+information) is created via Firebase Anonymous Authentication, and your Play Games player ID is linked to
+this record. Setting a display name is entirely optional; if you don't, nothing is stored on the server.
+You can change your name at any time from within the app, or contact us by email to request its complete
+deletion. Please do not use a display name that contains personal information such as your real name.</p>
 
 <h2>3. Notifications</h2>
 <p>The App may schedule <strong>local notifications</strong> (reminders to keep playing). On Android
